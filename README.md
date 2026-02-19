@@ -5,4 +5,4 @@
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/GabrielDompsa/GabrielDompsa/output/pacman-contribution-graph.svg">
 </picture>
 
-![Snake animation](https://github.com/DdCSxd/DdCSxd/blob/output/github-contribution-grid-snake.svg
+
