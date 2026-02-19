@@ -1,31 +1,34 @@
-name: Generate pacman animation
+name: Generate Typing Animation
 
 on:
-  schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
-
+  push:
+    branches: [main]
   workflow_dispatch:
 
-  push:
-    branches:
-    - main
-
 jobs:
-  generate:
+  build:
+    runs-on: ubuntu-latest
     permissions:
       contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
 
     steps:
-      - name: generate pacman-contribution-graph.svg
-        uses: abozanona/pacman-contribution-graph@main
+      - uses: actions/checkout@v4
+
+      - name: Generate typing SVG
+        uses: DenverCoder1/readme-typing-svg@main
         with:
-          github_user_name: ${{ github.repository_owner }}
+          lines: |
+            Olá! Eu sou desenvolvedor Full Stack
+            Apaixonado por Python e JavaScript
+            Sempre aprendendo coisas novas
+            Vamos colaborar?
+          width: 500
+          height: 50
+          color: 36BCF7
+          pause: 1000
+          output-file: dist/typing.svg
 
-
-      - name: push pacman-contribution-graph.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
