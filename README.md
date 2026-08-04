@@ -8,7 +8,11 @@
 
 ###
 
-<h3 align="left">Estudante de Engenharia de Software (4º período) com experiência em suporte técnico N1 e resolução de problemas em sistemas. Conhecimentos em Python, Java, PHP e MySQL, com foco em desenvolvimento e automação. Perfil proativo, disciplinado e em constante evolução na área de tecnologia.</h3>
+<h3 align="left">Desenvolvedor em formação e estudante de Engenharia de Software, com experiência em suporte técnico e desenvolvimento de soluções com Python e Java.
+
+Atuei na criação de um sistema de auditoria de chatbot utilizando Inteligência Artificial (LLM + RAG), com foco em performance, análise de dados e automação.
+
+Busco oportunidades como desenvolvedor backend para aplicar e expandir meus conhecimentos em sistemas e engenharia de software.</h3>
 
 ###
 
